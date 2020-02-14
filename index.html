@@ -1,0 +1,64 @@
+<!doctype html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MODAL POPUP | JS</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--header section start-->
+    <header>      
+    </header>
+    <!--header section end-->
+    <!--main section start-->
+    <main>
+      <section class="modal">
+      <a id="login">log in</a>
+      <a id="signup">sign up</a>
+
+      <div class="bg-modal">
+        <div class="login-modal">
+          <figure><img src="assets/img/user.png" alt="User png"></figure>
+          <input type="text" placeholder="ENTER YOUR E-MAIL ID" id="email">
+          <input type="password" placeholder="ENTER YOUR PASSWORD" id="password">
+          <a href="#FIXME" id="user-login">log in</a>
+          <a class="cancel-login">cancel</a>
+        </div>
+
+        <div class="signup-modal">
+          <figure><img src="assets/img/user.png" alt="User png"></figure>
+          <div class="data">
+          <input type="text" placeholder="ENTER YOUR NAME" id="name">
+          <input type="text" placeholder="ENTER YOUR E-MAIL ID" id="email">
+          <input type="password" placeholder="ENTER YOUR PASSWORD" id="password">
+          <input type="password" placeholder="ENTER YOUR PASSWORD AGAIN" id="confirm-password">
+          </div>
+          <a href="#FIXME" id="user-signup">signup</a>
+          <a class="cancel-signup">cancel</a>
+        </div>
+      </div>
+      </section>
+    </main>
+    <!--main section end-->
+    <!--footer section start-->
+    <footer>      
+    </footer>
+    <!--footer section end-->
+  </div>
+  <!--container end-->
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
