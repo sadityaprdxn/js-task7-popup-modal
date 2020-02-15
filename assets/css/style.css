@@ -120,7 +120,8 @@ li {
   background-image: -webkit-gradient(linear, left top, right top, from(#004445) , to(#2c786c));
   background-image: linear-gradient(to right, #004445 , #2c786c);
   color: #FFF;
-  padding: 10px 3%;
+  padding: 10px 0;
+  min-width: 10%;
   text-transform: uppercase;
   margin: 10px;
   font-size: 16px;
@@ -339,8 +340,93 @@ li {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+
+@media only screen and (max-width: 1024px) {
+
+  #login,
+  #signup{
+    padding: 10px 0;
+    min-width: 15%;
+    font-size: 14px;
+  }
+}
 
 
+@media only screen and (max-width: 768px) {
 
-}  
+  #login,
+  #signup{
+    padding: 10px 0;
+    min-width: 20%;
+    font-size: 12px;
+  }
+
+  .login-modal input,
+  .signup-modal input {
+    font-size: 10px;
+  }
+
+  #user-login,
+  #user-signup {
+    padding: 7px 3%;
+    font-size: 12px;
+  }
+
+  .login-modal,
+  .signup-modal{
+    border-radius: 30px;
+  }
+
+  .login-modal{
+    width: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+  #login,
+  #signup{
+    padding: 5px 0;
+    min-width: 30%;
+    font-size: 10px;
+  }
+
+  .login-modal input,
+  .signup-modal input {
+    font-size: 10px;
+  }
+
+  #user-login,
+  #user-signup {
+    padding: 7px 3%;
+    font-size: 12px;
+  }
+
+  .login-modal,
+  .signup-modal{
+    width: 60%;
+    border-radius: 30px;
+  }
+  
+  .signup-modal input{
+    width: 100%;
+    padding: 8px 5%;
+    margin-bottom: 3%;
+  }
+
+  .signup-modal figure{
+    width: 35%;
+    padding: 1.5%;
+    margin-bottom: 3%;
+  }
+
+
+  #user-signup{
+    width: 60%;
+  }
+
+  .signup-modal{
+    padding: 3%;
+  }
+}
